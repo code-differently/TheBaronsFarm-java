@@ -1,4 +1,11 @@
 package hbcu.stay.ready.baronsfarm.farm.produce;
 
-public class CornStalk {
+import hbcu.stay.ready.baronsfarm.Edible;
+
+public class CornStalk extends Crop{
+    EarCorn corn;
+    private EarCorn yield(Edible edible){
+        return corn;
+    }
+
 }

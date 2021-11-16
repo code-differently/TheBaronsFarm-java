@@ -1,4 +1,7 @@
 package hbcu.stay.ready.baronsfarm.people;
 
-public class Rider {
+import hbcu.stay.ready.baronsfarm.Rideable;
+
+public interface Rider extends Rideable {
+
 }
