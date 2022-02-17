@@ -1,7 +1,4 @@
-# Lab 23 
-
-## Ol' McBaron Had a Farm
-
+# Ol' McBaron Had a Farm
 * **Objective:** To implement a system representative of a Farm environment
 * **Purpose:** To demonstrate [multi-inheritence design issues](https://www.geeksforgeeks.org/java-and-multiple-inheritance/)
 * **Prerequesites:** A `UML` approved by an instructor.
@@ -26,7 +23,7 @@
 
 		* `Aircraft` are `Vehicle` which can  `fly`
 			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can `fertilize` a `CropRow`
-			
+
 
 	* `Produce` can `yield` an `Edible` object depending on their `hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
 		* `Crop` is a `Produce` which can `yield` an `Edible` object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
@@ -40,7 +37,36 @@
 	* `ChickenCoop` stores many `Chicken`
 	* `Farm` stores many `Stable`, many `ChickenCoop`, and a single `FarmHouse`
 
+# Establishing The Plot
+
+* `Baron`, a `Farmer` has a `Farm` consisting of
+	* 1 `Field` of 5 `CropRow`.
+		* Row 1 has `Corn`
+		* Row 2 has `Tomato`
+		* Row 3 and beyond grows arbitrary vegetation.
+
+	* 15 `Chicken` across 4 `ChickenCoop`
+	* 10 `Horse` across 3 `Stable`.
+	* 2 `FarmVehicle`
+	* 1 `Aircraft`
+	* His sister, `Baroness`, is a `Pilot` who uses a `CropDuster`.
 
 
 
+# The Plot Thickens...
+* Create test cases which simulate a typical work-week for `Baron` and `Baroness`.
+	* The accumulation of your test cases should ensure at least 80% test coverage.
 
+* The first few weekdays have already been considered for you.
+* Create a separate Test class for each day in the following scenario.
+	* As a farmer, Froilan must stick to a rigorous agricultural routine.
+		* Every morning, `Baron` and `Baroness` begin their morning by
+			* Riding each `Horse` in each `Stable`.
+			* Feeding each `Horse` 3 ear of `Corn`.
+			* For breakfast,
+				* `Baron` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `Egg`.
+				* `Baroness` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `Egg`.
+
+		* `Sunday`, `Baron` plants 3 different type of `Crop` in his first, second, and third `CropRow`.
+		* On `Monday`, his sister, `Baroness` uses the `CropDuster` to `fly` over the `Field` and `fertilize` each of the `CropRow`
+		* On `Tuesday`, `Baron` uses his `Tractor` to `harvest` each `Crop` in each `CropRow`.
